@@ -1,0 +1,13 @@
+~ $ kubectl get deployment
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+httpd-deployment   2/2     2            2           2m34s
+
+~ $ kubectl get service
+NAME            TYPE           CLUSTER-IP     EXTERNAL-IP                                                               PORT(S)        AGE
+httpd-service   LoadBalancer   x.x.x.x        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   80:xxxxx/TCP   2m13s
+kubernetes      ClusterIP      x.x.x.x       <none>    
+
+~ $ kubectl get pods
+NAME                                READY   STATUS    RESTARTS   AGE
+httpd-deployment-xxx-xx             1/1     Running   0          2m25s
+httpd-deployment-xxx-xx             1/1     Running   0          2m25s
